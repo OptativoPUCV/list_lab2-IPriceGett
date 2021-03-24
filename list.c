@@ -40,6 +40,7 @@ List * createList() {
 void * firstList(List * list) {
   if(!list->head)return NULL;
   Node *primer_nodo = list->head;
+  list->current = primer_nodo;
     return (void *)primer_nodo->data;
 }
 
